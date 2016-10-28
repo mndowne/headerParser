@@ -11,7 +11,8 @@
     "url": "git+https://github.com/mndowne/headerParser.git"
   },
   "dependencies":{
-    "express":"*"
+    "express":"*",
+    "express-handlebars":"*" 
   },
   "engines":{
     "node": "*"

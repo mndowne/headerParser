@@ -1,11 +1,14 @@
 var express = require('express');
 var app = express();
+var os = require('os');
+
 
 app.set('port',(process.env.PORT || 8080));
 
 app.get('/', function(req,res){
 
-res.send(req.connection.remoteAddress + ":::" + process.platform);
+res.send(req.connection.remoteAddress + ":::" + process.platform + "\n"
+ + os.platform() + os.release());
 
 
 });

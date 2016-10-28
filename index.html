@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>ChangeThis</title>
+   <!-- <link rel="stylesheet" href="style.css" type="text/css">-->
+
+  </head>
+
+  <body>
+    
+    <h4>This Website gets your ip address, language, and operating system </h4>
+    <div id="page"></div>
+    <script type="text/javascript">
+      var txt = "<p> ip: " + "\n" + 
+                "language: " + navigator.language + "\n" +
+                "OS: " + navigator.platform + "</p>";
+
+      document.getElementById("page").innerHTML= txt;
+
+
+    </script>
+  </body>
+</html>

@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>ChangeThis</title>
+    <title>My IP</title>
    <!-- <link rel="stylesheet" href="style.css" type="text/css">-->
 
   </head>
@@ -11,8 +11,10 @@
   <body>
     
     <h4>This Website gets your ip address, language, and operating system </h4>
+    
+    <div id="page"></div>
     <script type="text/javascript">
-      var txt = "<p> ip: " + {{ip}} + 
+      var txt = "<p> ip: " +  + 
                 "language: " + navigator.language + "\n" +
                 "OS: " + navigator.platform + "</p>";
 
@@ -21,6 +23,5 @@
 
     </script>
 
-    <div id="page"></div>
   </body>
 </html>

@@ -14,9 +14,14 @@
     
     <div id="page"></div>
     <script type="text/javascript">
-      var txt = "<p> ip: {{ip}} "   + 
-                "language: " + navigator.language + "\n" +
-                "OS: " + navigator.platform + "</p>";
+      var software = navigator.userAgent;
+      var first = software.indexOf("(");
+      var second = software.indexOf(")");
+      var splicedSoftware = software.slice(first + 1 , second);
+      var txt = "<p> ip: {{ip}}  </p>"   + 
+                "<p>Language: " + navigator.language + "</p>" +
+                "<p>OS: " + navigator.platform + "</p>" +
+                "<p>Software: " + splicedSoftware + " </p>" ;
 
       document.getElementById("page").innerHTML= txt;
 
